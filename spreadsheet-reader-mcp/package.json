@@ -1,0 +1,33 @@
+{
+  "name": "spreadsheet-reader-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for reading spreadsheet files (Excel, CSV, ODS)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "spreadsheet-reader-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "spreadsheet",
+    "excel",
+    "xlsx",
+    "csv"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
